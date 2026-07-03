@@ -1,0 +1,140 @@
+.page {
+  background: url('../assets/fondoprode2.png') center/cover no-repeat fixed;
+  background-color: #0d1117;
+  margin: 0 auto;
+  max-width: 980px;
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.titulo {
+  color: #e6edf3;
+  font-size: 1.3rem;
+  font-weight: 650;
+  margin: 0 0 4px;
+}
+
+.sub {
+  color: #7d8590;
+  font-size: 0.86rem;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 1rem;
+}
+
+.card,
+.panel {
+  background: rgba(22, 27, 34, 0.95);
+  border: 1px solid #30363d;
+  border-radius: 10px;
+}
+
+.card {
+  padding: 1rem 1.15rem;
+}
+
+.card h3,
+.panel h3 {
+  color: #e6edf3;
+  font-size: 1rem;
+  font-weight: 650;
+  margin: 0 0 10px;
+}
+
+.card ol {
+  color: #c9d1d9;
+  display: grid;
+  font-size: 0.9rem;
+  gap: 6px;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.nota {
+  border-top: 1px solid #30363d;
+  color: #7d8590;
+  font-size: 0.82rem;
+  margin: 12px 0 0;
+  padding-top: 10px;
+}
+
+.panel {
+  margin-top: 1rem;
+  padding: 1.15rem;
+}
+
+.panel p {
+  color: #c9d1d9;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0 0 8px;
+}
+
+.panel p:last-child {
+  margin-bottom: 0;
+}
+
+.puntosGrid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.puntosItem {
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+}
+
+.puntosItem strong {
+  color: #a5b4fc;
+  font-size: 0.86rem;
+}
+
+.puntosItem span {
+  color: #c9d1d9;
+  font-size: 0.82rem;
+}
+
+.faq {
+  display: grid;
+  gap: 8px;
+}
+
+.faq details {
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  color: #c9d1d9;
+  padding: 10px 12px;
+}
+
+.faq summary {
+  color: #e6edf3;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.faq p {
+  color: #7d8590;
+  margin-top: 8px;
+}
+
+@media (max-width: 760px) {
+  .page { padding: 1.25rem 1rem; }
+  .grid,
+  .puntosGrid { grid-template-columns: 1fr; }
+}

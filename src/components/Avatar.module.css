@@ -1,0 +1,40 @@
+.avatar {
+  align-items: center;
+  background: #6366f1;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-weight: 700;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatar img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.avatar span {
+  line-height: 1;
+}
+
+.sm {
+  font-size: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.md {
+  font-size: 12px;
+  height: 36px;
+  width: 36px;
+}
+
+.lg {
+  font-size: 22px;
+  height: 92px;
+  width: 92px;
+}

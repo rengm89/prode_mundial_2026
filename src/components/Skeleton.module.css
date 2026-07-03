@@ -1,0 +1,85 @@
+.skeletonContainer {
+  padding: 2rem 1.5rem;
+}
+
+.skeletonCard {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.skeletonHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+}
+
+.skeletonDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #30363d 25%, #21262d 50%, #30363d 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  flex-shrink: 0;
+}
+
+.skeletonLine {
+  height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #30363d 25%, #21262d 50%, #30363d 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonText {
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #30363d 25%, #21262d 50%, #30363d 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonBandera {
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #30363d 25%, #21262d 50%, #30363d 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  flex-shrink: 0;
+}
+
+.skeletonScore {
+  width: 50px;
+  height: 28px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #30363d 25%, #21262d 50%, #30363d 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonPartido {
+  padding: 10px 16px;
+  border-bottom: 1px solid #21262d;
+  background: #0d1117;
+}
+
+.skeletonFila {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

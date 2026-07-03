@@ -1,0 +1,208 @@
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  min-height: 100vh;
+  background: url('../assets/fondoprode2.png') center/cover no-repeat fixed;
+  background-color: #0d1117;
+  background-attachment: fixed;
+}
+.header { margin-bottom: 1.5rem; }
+.titulo { color: #e6edf3; font-size: 1.3rem; font-weight: 600; margin: 0 0 4px; }
+.sub { color: #7d8590; font-size: 0.85rem; margin: 0; }
+
+.exportActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.exportBtn {
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 650;
+  padding: 8px 12px;
+}
+
+.exportBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.exportCsv { background: #10b981; }
+.exportPdf { background: #ef4444; }
+
+.resumen {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.resumenItem {
+  background: rgba(22, 27, 34, 0.94);
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  min-width: 0;
+  padding: 12px;
+}
+
+.resumenLabel {
+  color: #7d8590;
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.resumenValor,
+.resumenTexto {
+  color: #e6edf3;
+  display: block;
+  line-height: 1.1;
+}
+
+.resumenValor {
+  font-size: 1.25rem;
+  font-weight: 750;
+}
+
+.resumenTexto {
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.lista { display: flex; flex-direction: column; gap: 8px; margin-bottom: 2rem; }
+
+.fila {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: border-color 0.15s;
+}
+
+.miFila { border-color: rgba(99, 102, 241, 0.5); background: rgba(99, 102, 241, 0.05); }
+
+.pos { width: 28px; text-align: center; font-size: 1.1rem; }
+.numPos { color: #7d8590; font-size: 0.9rem; font-weight: 500; }
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info { flex: 1; min-width: 0; }
+
+.nombre {
+  color: #e6edf3;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.vosBadge {
+  font-size: 0.68rem;
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.barra {
+  height: 3px;
+  background: #21262d;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.barraFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.6s ease;
+}
+
+.stats { display: flex; gap: 6px; font-size: 0.72rem; color: #7d8590; }
+
+.movSube { color: #22c55e; font-weight: 700; }
+.movBaja { color: #f87171; font-weight: 700; }
+
+.puntos {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0;
+  line-height: 1;
+}
+
+.ptLabel { font-size: 0.65rem; font-weight: 400; color: #7d8590; margin-top: 2px; }
+
+.leyenda {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.leyendaTitulo { color: #7d8590; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 10px; }
+
+.leyendaGrid { display: flex; flex-direction: column; gap: 6px; }
+
+.leyendaItem { display: flex; align-items: baseline; gap: 10px; font-size: 0.82rem; }
+
+.leyendaRonda { color: #7d8590; min-width: 160px; }
+
+.leyendaPts { color: #484f58; }
+.leyendaNota { color: #fbbf24; font-size: 0.76rem; font-weight: 600; }
+.ptExacto { color: #a5b4fc; font-weight: 600; }
+.ptGanador { color: #7d8590; font-weight: 600; }
+.ptSep { color: #30363d; }
+
+.loader { text-align: center; padding: 4rem 2rem; color: #7d8590; font-size: 0.9rem; }
+
+.vacio { text-align: center; padding: 4rem 2rem; color: #e6edf3; font-size: 1rem; }
+.subVacio { color: #7d8590; font-size: 0.85rem; margin-top: 8px; }
+
+@media (max-width: 760px) {
+  .page { padding: 1.25rem 1rem; }
+  .resumen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .resumenItem:last-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 460px) {
+  .resumen { grid-template-columns: 1fr; }
+  .resumenItem:last-child { grid-column: auto; }
+  .fila { padding: 11px 12px; gap: 10px; }
+  .stats { flex-wrap: wrap; }
+  .leyendaItem {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .leyendaRonda { min-width: 0; }
+}
